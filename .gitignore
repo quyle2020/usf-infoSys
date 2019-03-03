@@ -4,3 +4,8 @@
 
 /ConsoleApp1/.vs/ConsoleApp1/v15
 /ConsoleApp1/ConsoleApp1/obj
+/Assignment1_S19/Assignment1_S19/obj
+/Assignment1_S19/.vs/Assignment1_S19/v15
+*.dll
+*.pdb
+/Assignment1_S19/Assignment1_S19_Test/obj
