@@ -8,6 +8,7 @@
     ".NETCoreApp,Version=v2.0": {
       "Assignment1_S19_Test/1.0.0": {
         "dependencies": {
+          "Assignment1_S19": "1.0.0",
           "MSTest.TestAdapter": "1.2.0",
           "MSTest.TestFramework": "1.2.0",
           "Microsoft.NET.Test.Sdk": "15.5.0"
@@ -997,6 +998,11 @@
         "runtime": {
           "lib/netstandard1.3/System.Xml.XPath.XmlDocument.dll": {}
         }
+      },
+      "Assignment1_S19/1.0.0": {
+        "runtime": {
+          "Assignment1_S19.dll": {}
+        }
       }
     }
   },
@@ -1502,6 +1508,11 @@
       "sha512": "sha512-csWg/49hqZpqwD7FMejcD4qqeNSkDrHcZXi1aRMFkZ6xY9oewUF5rfoBYjtdFsmIYfjtJEJFrPge6FkzwG0AAA==",
       "path": "system.xml.xpath.xmldocument/4.0.1",
       "hashPath": "system.xml.xpath.xmldocument.4.0.1.nupkg.sha512"
+    },
+    "Assignment1_S19/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
     }
   }
 }
