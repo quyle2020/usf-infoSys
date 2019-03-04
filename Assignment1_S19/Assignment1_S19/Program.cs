@@ -22,7 +22,7 @@ namespace Assignment1_S19
             computeFrequency(arr);
 
             // Self-reflection
-            // To accomplish this assignemnt, I added two utility classes and a unit test project.
+            // To accomplish this assignment, I added two utility classes and a unit test project.
             // Through testing, I found that the factorial method works better with ulong type otherwise larger factorial will return negative number.
             // Also, on the integer division, I needed to cast the value back to double to avoid auto rounding down in C#.
             // In the print triangle, I took the shape and divided them into two section left and right of the single line and then added the indentation afterward.
