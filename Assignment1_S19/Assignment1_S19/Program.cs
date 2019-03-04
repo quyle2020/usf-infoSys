@@ -15,16 +15,18 @@ namespace Assignment1_S19
             double r1 = getSeriesResult(n1);
            
 
-            int n4 = 5;
+            int n4 = 7;
             printTriangle(n4);
 
-            int[] arr = new int[] { 1, 2, 3, 2, 2, 1, 3, 2 };
+            int[] arr = new int[] { 1, 2, 3, 2, 2, 1, 3, 2, 5, 1, 4, 5};
             computeFrequency(arr);
 
-            // write your self-reflection here as a comment
-            // need to use ulong for factorial as after n=20 the number become negative
-            // need to convert the int division to double otherwise anything less than 1 will be negative
-            // try to utilize built-in function such as LINQ to compute the frequency 
+            // Self-reflection
+            // To accomplish this assignemnt, I added two utility classes and a unit test project.
+            // Through testing, I found that the factorial method works better with ulong type otherwise larger factorial will return negative number.
+            // Also, on the integer division, I needed to cast the value back to double to avoid auto rounding down in C#.
+            // In the print triangle, I took the shape and divided them into two section left and right of the single line and then added the indentation afterward.
+            // Finally, it was more effective to compute the frequency of the item in array using the group by function from LINQ library. 
 
             Console.Read();
         }
@@ -146,7 +148,8 @@ namespace Assignment1_S19
                 // utilizing built-in groupby in LINQ
                 var g = list.GroupBy(b => b).Select(b => new { val = b.First(), count = b.Count() });
 
-                Console.WriteLine($"\r\nNumber\tFrequencey");
+                Console.WriteLine($"\r\nArray ({string.Join(",", a)})");
+                Console.WriteLine($"Number\tFrequencey");
                 foreach (var i in g)
                 {
                     Console.WriteLine($"{i.val}\t{i.count}");
